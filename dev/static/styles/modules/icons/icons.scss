@@ -1,0 +1,24 @@
+.icon{
+  &-magnifier{
+    @include box(16px);
+    fill: $white;
+  }
+  &-alarm{
+    width: 22px;
+    height: 23px;
+    fill: $blue-grey;
+  }
+  &-envelope{
+    width: 23px;
+    height: 24px;
+    fill: $blue-grey;
+  }
+  &-cart{
+    width: 22px;
+    height: 24px;
+    fill: $blue-grey;
+  }
+  &-magnifier{
+    @include box(16px);
+  }
+}

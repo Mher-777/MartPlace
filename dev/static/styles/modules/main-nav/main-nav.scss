@@ -1,0 +1,30 @@
+.main-menu{
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    position: relative;
+    &:not(:first-child) { margin-left: 33px;}
+    &:hover{
+      .main-menu__link{
+        color: $cerulean-blue;
+      }
+      .main-menu__dropdown{
+        display: block;
+      }
+    }
+    &--big-dropdown{
+      position: static;
+    }
+  }
+  &__link{
+    text-transform: uppercase;
+    color: $black-three;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all linear .3s;
+    display: inline;
+    padding-bottom: 32px;
+  }
+}

@@ -1,0 +1,158 @@
+@import "notification-dropdown";
+@import "messages-dropdown";
+@import "basket-dropdown";
+.main-menu__dropdown {
+  width: 270px;
+  display: none;
+  padding: 20px;
+  &-item {
+    width: 100%;
+  }
+  &-title{
+    margin-left: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $brownish-grey-two;
+  }
+}
+.dropdown{
+  position: absolute;
+  top: calc(100% + 29px);
+  box-shadow: 0 5px 40px 0 rgba(82, 85, 90, 0.2);
+  border-top: 1px solid $cerulean-blue;
+  background-color: $white;
+  left: 0;
+  &--big{
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 30px;
+
+  }
+  &-link{
+    padding: 11.5px 10px;
+    color: $slate;
+    font-size: 15px;
+    transition: all linear .3s;
+    display: block;
+    border-radius: 2px;
+    &:hover {
+      background-color: $cerulean-blue;
+      color: $white;
+    }
+  }
+  &__inner{
+    display: flex;
+  }
+  &-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+    display: block;
+  }
+  &__row{
+    display: flex;
+  }
+  &__col{
+    &:not(:first-child){
+      margin-left: 35px;
+    }
+  }
+}
+.header__top-dropdown{
+  position: absolute;
+  box-shadow: 0 5px 40px 0 rgba(82, 85, 90, 0.2);
+  background-color: #ffffff;
+  z-index: 2;
+  top: 100%;
+  border-top: 1px solid $cerulean-blue;
+  display: none;
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    bottom: 100%;
+    left: 0;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 10px 9px;
+    border-color: transparent transparent $cerulean-blue transparent;
+    top: -10px;
+  }
+  &-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $pale-grey-eight;
+  }
+  &-title{
+    font-size: 18px;
+    color: $black;
+    font-weight: 500;
+  }
+  &-more{
+    font-size: 15px;
+    color: $cerulean-blue;
+  }
+  &-item{
+    display: block;
+    &:not(:last-child){
+      padding-bottom: 20px;
+      border-bottom: 1px solid $pale-grey-eight;
+    }
+  }
+  &-link{
+    margin-top: 20px;
+    display: flex;
+  }
+  &-userpic{
+    @include box(40px);
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    margin-right: 15px;
+  }
+  &-info{
+    max-width: 215px;
+  }
+  &-desc{
+    font-size: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 215px;
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+  &--name{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $black-three;
+  }
+  &-time{
+    display: block;
+    font-size: 14px;
+    color: $battleship-grey-two;
+  }
+
+  &-text{
+    font-size: 15px;
+    color: $battleship-grey-two;
+    line-height: 20px;
+    &--color{
+      &-blue{
+        color: $cerulean-blue;
+      }
+    }
+  }
+}

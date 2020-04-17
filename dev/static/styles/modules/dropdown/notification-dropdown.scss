@@ -1,0 +1,59 @@
+.header__top-dropdown {
+  &.dropdown-notification {
+    padding: 25px;
+    width: 370px;
+    right: 0;
+    &::before {
+      left: 28px;
+    }
+  }
+  &.dropdown-messages{
+    width: 370px;
+    max-width: 370px;
+    right: 242px;
+    &::before{
+      right: 30px;
+    }
+  }
+}
+.dropdown-notification{
+  &__icon {
+    margin-top: 13px;
+    margin-left: auto;
+    & > * {
+      width: 16px;
+      height: 14px;
+    }
+    .icon-heart {
+      fill: $cerulean-blue;
+    }
+    .icon-bubble {
+      fill: $bluey-purple;
+    }
+    .icon-cart {
+      fill: $coral-pink-two;
+    }
+    .icon-star{
+      fill: $apple-two;
+    }
+    @include box(32px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--color{
+      &-blue{
+        background-color: rgba($cerulean-blue, .1);
+      }
+      &-pink{
+        background-color: rgba($bluey-purple, .1);
+      }
+      &-red{
+        background-color: rgba($coral-pink-two, .1);
+      }
+      &-green{
+        background-color: rgba($apple-two, .1);
+      }
+    }
+  }
+}

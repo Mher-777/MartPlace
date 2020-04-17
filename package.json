@@ -9,7 +9,7 @@
     "style:lint": "stylelint ./dev/static/styles/**/*.scss --syntax scss",
     "style:fix": "stylelint './dev/static/styles/**/*.scss' --syntax scss --fix"
   },
-  "author": "Саламатин Анатолий",
+  "author": "Mher Muradyan",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -41,6 +41,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-w3c-html-validator": "^2.0.0",
     "gulp.spritesmith": "^6.11.0",
+    "jquery": "^3.5.0",
     "merge-stream": "^2.0.0",
     "node-sass": "^4.13.1",
     "stylelint": "^13.2.1",

@@ -1,1 +1,96 @@
-header { flex: 0 0 auto; }
+header {
+  flex: 0 0 auto;
+}
+.header {
+  &__top {
+    background-color: $pale-grey;
+    &-inner {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+  }
+  &__btn {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+  &__icon {
+    &:hover{
+      .header__top-dropdown{
+        display: block;
+      }
+
+
+    }
+    &-link{
+      position: relative;
+      padding-right: 16px;
+    }
+    &-number {
+      position: absolute;
+      border-radius: 50%;
+      min-width: 22px;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      bottom: calc(100% - 10px);
+      right: 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: $white;
+      align-items: center;
+      padding: 0 6px;
+      white-space: nowrap;
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    &-userpic {
+      margin-left: 30px;
+      @include box(50px);
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: $white;
+    }
+    &-image{
+      object-fit: cover;
+      object-position: 5px 6px;
+    }
+    &-info {
+      margin-left: 20px;
+    }
+    &-name{
+      display: block;
+      line-height: 1.38;
+      font-weight: 500;
+      color: $black-three;
+    }
+    &-price{
+      font-size: 15px;
+      color: $cerulean-blue;
+    }
+  }
+  &__bottom{
+    &-inner{
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      align-items: center;
+      position: relative;
+    }
+  }
+}

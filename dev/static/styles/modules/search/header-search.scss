@@ -1,0 +1,42 @@
+.header{
+  &__search{
+    max-width: 360px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 23px;
+    border: 1px solid $pale-grey-five;
+    position: relative;
+    &-label{
+      display: block;
+      width: 100%;
+    }
+    &-input{
+      height: 46px;
+      display: block;
+      width: 100%;
+      padding: 10px 25px;
+      border: none;
+      &::placeholder{
+        font-size: 15px;
+        color: $steel;
+      }
+    }
+    &-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      height: 100%;
+      width: 70px;
+      border-radius: 23px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all linear .3s;
+      &:hover{
+        width: 100px;
+      }
+    }
+  }
+}

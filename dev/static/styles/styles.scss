@@ -6,9 +6,10 @@
 //@include sprites($spritesheet-sprites);
 
 html {
-  font-family: 'Open Sans', Arial, serif;
+
   font-size: 16px;
   height: 100%;
+  font-weight: 400;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: $bg-font;
 }
 
 *,
@@ -58,10 +60,22 @@ input,
 select,
 button { outline: none; }
 
+a{
+  text-decoration: none;
+}
+li,
+ol,
+a
+{
+  display: inline-block;
+
+}
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .content { flex: 1 0 auto; }
@@ -70,6 +84,7 @@ button { outline: none; }
   margin: 0 auto;
   max-width: $content;
   width: 100%;
+  padding: 0 15px;
 }
 
 //Модули

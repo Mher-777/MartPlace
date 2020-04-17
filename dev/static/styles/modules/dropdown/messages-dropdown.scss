@@ -1,0 +1,45 @@
+.dropdown-messages{
+  .header__top-dropdown-head{
+    padding:  25px;
+  }
+  &__name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    &-icon{
+      margin-left: 13px;
+      @include box(17px);
+    }
+  }
+  .header__top-dropdown{
+    &-time{
+      margin-left: auto;
+    }
+    &-info{
+      max-width: 100%;
+      width: 100%;
+    }
+    &-link{
+      padding: 0 25px;
+    }
+    &-userpic{
+      flex-shrink: 0;
+    }
+    &-item{
+      padding-bottom: 20px;
+      &--unread{
+        .dropdown-messages__name-icon{
+          fill: $cerulean-blue;
+        }
+        .header__top-dropdown-time{
+          color: $cerulean-blue;
+        }
+      }
+      &--pending {
+        .dropdown-messages__name-icon{
+          fill: $greyish-brown;
+        }
+      }
+    }
+  }
+}
