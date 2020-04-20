@@ -1,1 +1,29 @@
 @import "../../../../node_modules/normalize.css/normalize";
+@import "../../../../node_modules/jquery-form-styler/dist/jquery.formstyler";
+.jq{
+  &-selectbox{
+    &__select{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding:0 20px;
+    }
+    &__dropdown{
+      width: 100%;
+      box-shadow: 0 5px 40px 0 rgba(82, 85, 90, 0.2);
+      border-top: 1px solid #0674ec;
+      background-color: #fff;
+      li{
+        padding: 10px 20px;
+        transition: all linear .3s;
+        &:hover{
+          background-color: #0674ec;
+          color: #fff;
+        }
+      }
+      ul{
+
+      }
+    }
+  }
+}

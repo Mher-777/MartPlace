@@ -15,6 +15,7 @@
     &-transperent{
       background-color: transparent;
       border: 1px solid $white;
+      color: $white;
     }
     &-gray{
       background-color: $pale-grey-six;
@@ -29,10 +30,6 @@
       width: 140px;
       padding: 4.3px 5px;
     }
-    &-m{
-      width: 190px;
-      padding: 20px 10px;
-    }
     &-xs{
       padding: 0 12px;
       background-color: rgba($cerulean-blue, .1);
@@ -40,6 +37,10 @@
       font-weight: 500;
       line-height: 1.88;
       color: $cerulean-blue;
+    }
+    &-m{
+      width: 190px;
+      padding: 15.5px 10px;
     }
   }
 }

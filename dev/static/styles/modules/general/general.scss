@@ -1,0 +1,32 @@
+.logo{
+  max-width: 200px;
+}
+.title{
+  font-size: 30px;
+  &--color{
+    &-white{
+      color: $pale-grey-four;
+    }
+    &-black{
+      color: $black;
+    }
+  }
+  &--size{
+    &-l{
+      font-size: 60px;
+      line-height: 1.17;
+    }
+  }
+  &--weight{
+    &-normal{
+      font-weight: 400;
+    }
+    &-medium{
+      font-size: 500px;
+    }
+    &-bold{
+      font-weight: 700;
+    }
+  }
+}
+@import "main-screen";

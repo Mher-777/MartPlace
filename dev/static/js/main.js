@@ -7,6 +7,13 @@ $(function () {
 		})
 
 	}
-
+	let formStyler = function(){
+		$('select').styler({
+			selectSearch: true,
+			selectSmartPositioning: false,
+			selectVisibleOptions: 5,
+		});
+	}
+	formStyler()
 	basketTutorial()
 })
