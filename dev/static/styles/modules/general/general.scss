@@ -1,3 +1,11 @@
+section{
+  &.section-bg--color-gray{
+    background-color: $pale-grey-three;
+  }
+  &.section--padding-top-bottom{
+    padding: 120px 0;
+  }
+}
 .logo{
   max-width: 200px;
 }
@@ -12,6 +20,10 @@
     }
   }
   &--size{
+    &-s{
+      font-size: 24px;
+      line-height: 24px;
+    }
     &-l{
       font-size: 60px;
       line-height: 1.17;
@@ -30,3 +42,4 @@
   }
 }
 @import "main-screen";
+@import "features";

@@ -14,15 +14,18 @@
     margin-bottom: 15px;
     border-bottom: 1px solid $brownish-grey-two;
   }
+  &.dropdown{
+    position: absolute;
+    top: calc(100% + 28px);
+    box-shadow: 0 5px 40px 0 rgba(82, 85, 90, 0.2);
+    border-top: 1px solid $cerulean-blue;
+    background-color: $white;
+    left: 0;
+    z-index: 2;
+  }
 }
 .dropdown{
-  position: absolute;
-  top: calc(100% + 28px);
-  box-shadow: 0 5px 40px 0 rgba(82, 85, 90, 0.2);
-  border-top: 1px solid $cerulean-blue;
-  background-color: $white;
-  left: 0;
-  z-index: 2;
+
   &--big{
     width: 100%;
     top: 100%;

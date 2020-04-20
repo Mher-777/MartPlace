@@ -33,6 +33,28 @@
     position: absolute;
     width: 100%;
     top: calc(100% - 67.5px);
+    z-index: 1;
+    &::before,
+    &::after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+      background-color: $white;
+      opacity: .5;
+      z-index: -1;
+    }
+    &::before{
+      max-width: 1110px;
+      top: -13px;
+    }
+    &::after{
+      max-width: 1080px;
+      top: -26px;
+    }
     &-form{
       height: 135px;
       width: 100%;
