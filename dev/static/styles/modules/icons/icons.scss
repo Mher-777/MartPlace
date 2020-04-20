@@ -18,7 +18,23 @@
     height: 24px;
     fill: $blue-grey;
   }
+  &-heart{
+    @include box(17px);
+    fill: $bluey-purple;
+  }
   &-magnifier{
     @include box(16px);
+  }
+  &-chevron{
+    &-left,
+    &-right{
+      width: 16px;
+      height: 20px;
+      fill: $white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
