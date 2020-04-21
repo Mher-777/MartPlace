@@ -1,0 +1,26 @@
+.product-item.product-item--margin-left.mix.category-psd-template(data-number="3")
+	.product-item__head
+		img(src="static/images/common/product-image-1.jpg" alt="").product-item__image
+		.product-item__head-box
+			.product-item__head-links
+				a(href="#").product-item__link.btn.btn--bg-transperent More Info
+				a(href="#").product-item__link.btn.btn--bg-white Live Demo
+	.product-item__box
+		.product-item__body
+			h3.product-item__title Marketify Coffee Shop
+			.product-item__author
+				.product-item__name
+					img(src="static/images/common/avatar-3.png", alt="").product-item__userpic
+					span.product-item__name-text EchoTheme
+				a(href="#").product-item__snippet
+					+icon('psd', 'product-item__snippet-icon')
+					span.product-item__snippet-text PSD
+			span.product-item__desc Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisquethe mattis, leo quam aliquet congue.
+		.product-item__footer
+			a(href="#").product-item__price.btn.btn--size-xs.btn--color-price $18
+			a(href="#").product-item__wish-list.wish-list.wish-list--color-grey
+				+icon('heart', 'wish-list__icon')
+				span.wish-list__count 48
+			a(href="#").basket.product-item__basket
+				+icon('cart', 'basket__icon')
+				span.basket__count 50

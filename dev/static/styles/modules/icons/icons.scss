@@ -38,3 +38,16 @@
     }
   }
 }
+.basket{
+  color: $cerulean-blue;
+  font-size: 15px;
+  line-height: 15px;
+  &__icon{
+    fill: $cerulean-blue;
+    @include box(16px);
+    margin-right: 10px;
+  }
+  &__count{
+    vertical-align: middle;
+  }
+}

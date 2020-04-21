@@ -15,11 +15,10 @@ $(function () {
 		});
 	}
 	let mainRated = () => {
-		$('.rated.rated--default').rateYo({
-			rating: 4.5,
+		$('.rated').rateYo({
 			starWidth: "15px",
-			normalFill: "#ffc000",
-			readOnly: true,
+			normalFill: "#ccc",
+			ratedFill: "#ffc000"
 		})
 	}
 	let featuredSlider = () => {
@@ -33,8 +32,38 @@ $(function () {
 			prevArrow: '<button class="slider-arrow featured-product__arrow featured-product__arrow--left"><svg class="svg-sprite-icon icon-chevron-left"><use xlink:href="static/images/sprite/symbol/sprite.svg#chevron-left"></use></svg></button>',
 		})
 	}
+	let filterDropDown = () => {
+		const trigger = $(".section-top__filter");
+		trigger.on('click', function () {
+			$('.section-top__filter-dropdown').addClass('section-top__filter-dropdown--open')
+		})
+		$(document).on('click', function(event){
+			if(trigger !== event.target && !trigger.has(event.target).length){
+				$(".section-top__filter-dropdown").removeClass("section-top__filter-dropdown--open");
+			}
+		});
+	}
+	let newestProductFilter = () => {
+	mixitup('.newest-product__inner',  {
+		"animation": {
+			"duration": 600,
+			"nudge": true,
+			"reverseOut": false,
+			"effects": "fade rotateX(70deg)"
+		}
+	});
+
+
+
+
+	}
+
 	formStyler()
 	basketTutorial()
 	mainRated()
 	featuredSlider()
+	filterDropDown()
+	newestProductFilter()
+
+
 })

@@ -1,0 +1,26 @@
+section.s-newest-product.section--padding-top-bottom.section-bg--color-pale-grey
+	.container
+		.section-top
+			h2.title.title--color-black.title--size-s Newest Release Products
+			.section-top__filter
+				span.section-top__filter-text Filter by:
+				+icon('ellipsis', 'section-top__filter-icon')
+				include ../../modules/dropdown/filte-dropdown
+		.newest-product__btns
+			button.newest-product__btn.btn.btn--size-xs(data-filter="all") All
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-plugins") Plugins
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-wordpress") WordPress
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-site-template") Site Template
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-psd-template") PSD Template
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-joomla") Joomla
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-interface") User Interface
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-landing-page") Landing Page
+			button.newest-product__btn.btn.btn--size-xs(data-filter=".category-software") Software
+		.newest-product__inner
+			include ../../modules/products/product-item-1
+			include ../../modules/products/product-item-2
+			include ../../modules/products/product-item-3
+			include ../../modules/products/product-item-4
+			include ../../modules/products/product-item-5
+			include ../../modules/products/product-item-6
+		button.newest-product__btn-all.btn.btn--size-m.btn--bg-blue All New Products

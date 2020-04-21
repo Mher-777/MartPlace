@@ -1,0 +1,76 @@
+.newest-product{
+  &__btns{
+    margin-top: 30px;
+    height: 92px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(90, 93, 100, 0.1);
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  &__btn{
+    padding: 1px 20px;
+    cursor: pointer;
+    &.mixitup-control-active{
+      background-color: $cerulean-blue;
+      color: $white;
+    }
+    &:not(:first-child){
+      margin-left: 10px;
+    }
+    &-all{
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+  &__inner{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -28px;
+    .product-item{
+      margin-bottom: 30px;
+    }
+  }
+}
+.section-top__filter{
+  position: relative;
+  &-dropdown{
+    position: absolute;
+    box-shadow: 0 5px 40px 0 rgba(82, 85, 90, 0.2);
+    border-top: 1px solid #0674ec;
+    background-color: $white;
+    left: 0;
+    z-index: 2;
+    border-top: 1px solid #0674ec;
+    display: none;
+    &--open{
+      display: block;
+    }
+  }
+  &-btn{
+    border: none;
+    white-space: nowrap;
+    background-color: transparent;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: all linear .3s;
+    cursor: pointer;
+    &:hover{
+      background-color: #0674ec;
+      color: #fff;
+    }
+  }
+  &-item{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+  }
+
+}

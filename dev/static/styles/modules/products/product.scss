@@ -1,0 +1,122 @@
+.product-item{
+  max-width: 361px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  &__box{
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(108, 111, 115, 0.1);
+  }
+  &__head{
+    position: relative;
+    height: 230px;
+    max-height: 230px;
+    &:hover{
+      .product-item__head-box{
+        height: 100%;
+      }
+      .product-item__head-links{
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+    &-box{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to top, #7347c1, #0674ec);
+      transition: all linear .2s;
+      height: 0;
+      overflow: hidden;
+    }
+    &-links{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: all linear .3s;
+    }
+  }
+  &__image{
+    height: 100%;
+    width: 100%;
+  }
+  &__link{
+    width: 130px;
+    padding: 9.5px 10px;
+    margin: 0 5px;
+    font-weight: 500;
+  }
+  &__body{
+    padding: 30px 27px;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  &__author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__name{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  &__userpic{
+    @include box(28px);
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  &__snippet{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    line-height: 15px;
+    &-icon{
+      font-size: 15px;
+      @include box(17px);
+      fill: $bluey-purple;
+      margin-right: 10px;
+    }
+  }
+  &__desc{
+    line-height: 30px;
+    color: $greyish-brown;
+  }
+  &__footer{
+    padding: 15px 27px;
+    border-top: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    & > * {
+      &:not(:last-child){margin-right: 15px;}
+    }
+  }
+  &__price{
+    padding: 1px 18px;
+  }
+  &__basket{
+    margin-left: auto;
+  }
+  &--margin{
+    &-left{
+      flex-basis: calc(33.333333% - 28px);
+      margin-left: 28px;
+    }
+  }
+}
+.wish-list{
+  display: flex;
+  align-items: center;
+  &__count{
+    color: #6f7d8d;
+    font-size: 15px;
+    line-height: 15px;
+    margin-left: 5px;
+  }
+}

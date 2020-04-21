@@ -6,7 +6,8 @@ const vendorsScripts = [
   'node_modules/jquery/dist/jquery.min.js',
   'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
   'node_modules/rateyo/min/jquery.rateyo.min.js',
-  'node_modules/slick-carousel/slick/slick.js'
+  'node_modules/slick-carousel/slick/slick.js',
+  'node_modules/mixitup/dist/mixitup.js'
 ];
 
 module.exports = function vendors(cb) {

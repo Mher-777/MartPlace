@@ -2,6 +2,9 @@ section{
   &.section-bg--color-gray{
     background-color: $pale-grey-three;
   }
+  &.section-bg--color-pale-grey{
+    background-color: $pale-grey-two;
+  }
   &.section--padding-top-bottom{
     padding: 120px 0;
   }
@@ -16,6 +19,16 @@ section{
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(108, 111, 115, 0.1);
   background-color: $white;
+  &__filter{
+    color: #747b86;
+    cursor: pointer;
+    &-icon{
+      width: 5px;
+      height: 20px;
+      fill: $bluey-grey;
+      margin-left: 25px;
+    }
+  }
 }
 .logo{
   max-width: 200px;
@@ -68,3 +81,4 @@ section{
 @import "main-screen";
 @import "features";
 @import "featured-products";
+@import "newest-product";

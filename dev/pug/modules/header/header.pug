@@ -12,17 +12,17 @@ header.header
 						a(href="#").header__icon-link
 							+icon('alarm')
 							span.header__icon-number(style="background-color: #ff6a6c;") 25
-						include ../../pages/dropdown/notification-dropdown
+						include ../dropdown/notification-dropdown
 					.header__icon
 						a(href="#").header__icon-link
 							+icon('envelope')
 							span.header__icon-number(style="background-color: #62d03b;") 6
-						include ../../pages/dropdown/messages-dropdown
+						include ../dropdown/messages-dropdown
 					.header__icon
 						a(href="#").header__icon-link
 							+icon('cart')
 							span.header__icon-number(style="background-color: #0674ec;") 2
-						include ../../pages/dropdown/basket-dropdown
+						include ../dropdown/basket-dropdown
 				a(href="#").header__author
 					.header__author-userpic
 						img(src="static/images/common/avatar.png").header__author-image
@@ -32,6 +32,6 @@ header.header
 	.header__bottom
 		.container
 			.header__bottom-inner
-				include ../../pages/main-menu/main-menu
-				include ../../pages/search/header__search
+				include ../main-menu/main-menu
+				include ../search/header__search
 

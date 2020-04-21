@@ -44,6 +44,7 @@
     "jquery": "^3.5.0",
     "jquery-form-styler": "^2.0.2",
     "merge-stream": "^2.0.0",
+    "mixitup": "^3.3.1",
     "node-sass": "^4.13.1",
     "rateyo": "^2.3.5",
     "slick-carousel": "^1.8.1",
