@@ -94,16 +94,6 @@
   &__rated{
     margin-left: auto;
   }
-  &__control{
-    display: flex;
-    width: 110px;
-    height: 45px;
-    border-radius: 22.5px;
-    overflow: hidden;
-    &.featured-product__control--bg-pink{
-      background-color: $bluey-purple;
-    }
-  }
   &__arrow{
     cursor: pointer;
   }

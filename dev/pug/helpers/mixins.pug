@@ -5,3 +5,8 @@ mixin icon(name,mod)
 	else
 		svg(class="svg-sprite-icon icon-" + name)
 			use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
+mixin rated(number,name)
+	if(number || name)
+		.rated(class=name data-rateyo-read-only="true" data-rateyo-rating=number)
+	else
+		.rated(data-rateyo-read-only="true" data-rateyo-rating='4.5')
