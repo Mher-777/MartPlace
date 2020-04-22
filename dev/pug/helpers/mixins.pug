@@ -10,3 +10,9 @@ mixin rated(number,name)
 		.rated(class=name data-rateyo-read-only="true" data-rateyo-rating=number)
 	else
 		.rated(data-rateyo-read-only="true" data-rateyo-rating='4.5')
+mixin title(titleOne, titleTwo, text)
+	.section-head
+		h2.section-title
+			span.section-title__text=titleOne
+			span.section-title__text.section-title__text--color-blue=titleTwo
+		span.section-desc=text

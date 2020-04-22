@@ -7,7 +7,8 @@
     justify-content: space-between;
   }
   &__col{
-    max-width: 15%;
+    min-width: 140px;
+    max-width: 25%;
     &--color{
       &-yellow{
         .statistics__col{
@@ -39,8 +40,9 @@
       margin-bottom: 10px;
       font-size: 36px;
       text-align: center;
+      white-space: nowrap;
     }
-    &-desc{
+    &-title{
       font-size: 18px;
       display: block;
       text-align: center;

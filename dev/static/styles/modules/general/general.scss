@@ -96,10 +96,34 @@ section{
     cursor: pointer;
   }
 }
-
+.section{
+  &-head{
+    align-items: center;
+    max-width: 675px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+  &-title{
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 25px;
+    &__text{
+      &--color{
+        &-blue{
+          color: $cerulean-blue;
+        }
+      }
+    }
+  }
+  &-desc{
+    line-height: 1.88;
+    color: $greyish-brown;
+  }
+}
 @import "main-screen";
 @import "features";
 @import "featured-products";
 @import "newest-product";
 @import "followers-feed";
 @import "statistics";
+@import "advantages";
