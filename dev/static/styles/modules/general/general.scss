@@ -8,6 +8,9 @@ section{
   &.section--padding-top-bottom{
     padding: 120px 0;
   }
+  &.section-bg--color-black{
+    background-color: $almost-black;
+  }
 }
 .section-top{
   width: 100%;
@@ -99,3 +102,4 @@ section{
 @import "featured-products";
 @import "newest-product";
 @import "followers-feed";
+@import "statistics";

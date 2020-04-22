@@ -70,17 +70,45 @@ $(function () {
 		$('[data-space]').each(function () {
 			let $this = $(this),
 				$space = $this.attr('data-space');
-			$('.slick-slide').css({
+			$('.s-followers-feed .slick-slide').css({
 				marginLeft: $space + 'px',
 				marginRight: $space + 'px'
 			});
-			$('.slick-list').css({
+			$('.s-followers-feed .slick-list').css({
 				marginLeft: -$space + 'px',
 				marginRight: -$space/2 + 'px'
 			})
 		});
 	}
-
+	let scrollCount = () => {
+		let a = 0;
+		$(window).scroll(function() {
+			let oTop = $('.home__counters').offset().top - window.innerHeight;
+			if (a === 0 && $(window).scrollTop() > oTop) {
+				$('.statistics__col-count').each(function() {
+					let $this = $(this),
+						countTo = $this.attr('data-count');
+					$({
+						countNum: $this.text()
+					}).animate({
+							countNum: countTo
+						},
+						{
+							duration: 5000,
+							easing: 'swing',
+							step: function(now) {
+								let count = Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
+								$this.text(count);
+							},
+							complete: function() {
+								$this.text(this.count);
+							}
+						});
+				});
+				a = 1;
+			}
+		});
+	}
 
 	formStyler()
 	basketTutorial()
@@ -90,4 +118,5 @@ $(function () {
 	followersFeedSlider()
 	newestProductFilter()
 	sliderSpace()
+	scrollCount()
 })

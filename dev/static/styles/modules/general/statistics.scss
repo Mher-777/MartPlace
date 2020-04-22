@@ -1,0 +1,54 @@
+.s-statistics{
+  padding: 90px 0;
+}
+.statistics{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col{
+    max-width: 15%;
+    &--color{
+      &-yellow{
+        .statistics__col{
+          &-count{color: $orangey-yellow;}
+          &-icon{fill: $orangey-yellow;}
+        }
+      }
+      &-blue{
+        .statistics__col{
+          &-count{color: #58c9e9;}
+          &-icon{fill: #58c9e9;}
+        }
+      }
+      &-green{
+        .statistics__col{
+          &-count{color: #77de51;}
+          &-icon{fill: #77de51; }
+        }
+      }
+      &-red{
+        .statistics__col{
+          &-count{ color: $coral-pink-two;}
+          &-icon{fill: $coral-pink-two; }
+        }
+      }
+    }
+    &-count{
+      display: block;
+      margin-bottom: 10px;
+      font-size: 36px;
+      text-align: center;
+    }
+    &-desc{
+      font-size: 18px;
+      display: block;
+      text-align: center;
+    }
+    &-icon{
+      @include box(50px);
+      margin: 0 auto 30px;
+      display: block;
+    }
+  }
+}
