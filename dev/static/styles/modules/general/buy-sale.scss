@@ -1,0 +1,53 @@
+.buy-sale{
+  &__wrapper{
+    display: flex;
+  }
+  &__bg{
+    width: 50%;
+    position: relative;
+    min-height: 560px;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 63%;
+      @include cover-background();
+    }
+    &--blue{
+      background-color: $cerulean-blue;
+      &::before{
+        background-image: url('../images/common/sale-buy-decor-1.png');
+      }
+    }
+    &--purple{
+      background-color: $bluey-purple;
+      &::before{
+        background-image: url('../images/common/sale-buy-decor-2.png');
+      }
+    }
+  }
+  &__content{
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 95px 0;
+    text-align: center;
+    color: $white;
+    position: relative;
+  }
+  &__icon{
+    @include box(120px);
+    fill: $white;
+    margin-bottom: 40px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+  &__text{
+    line-height: 1.88;
+    margin-bottom: 35px;
+  }
+}
