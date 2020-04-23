@@ -109,6 +109,13 @@ $(function () {
 			}
 		});
 	}
+	let btnAll = () => {
+		$('.reviews__item').slice(0, 2).show();
+		$('.reviews__btn-all').on('click', function (e) {
+			e.preventDefault();
+			$('.reviews__item:hidden').slice(0, 2).slideDown();
+		});
+	}
 
 	formStyler()
 	basketTutorial()
@@ -119,4 +126,5 @@ $(function () {
 	newestProductFilter()
 	sliderSpace()
 	scrollCount()
+	btnAll()
 })
